@@ -8,3 +8,10 @@ Set up is based on instructions from
 $ docker build -t unifi .
 $ docker run --restart=always -d unifi
 ```
+
+
+Note - it is important to check your firewall rules if the Unifi AP cannot be adopted.  
+
+The container exposes a number of ports, however i found removing the iptables was the 
+only way to get the AP adopted.
+
