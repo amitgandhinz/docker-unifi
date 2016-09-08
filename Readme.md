@@ -6,7 +6,7 @@ Set up is based on instructions from
 
 ```
 $ docker build -t unifi .
-$ docker run --restart=always -d unifi
+$ docker run -d --restart always --name unifi_controller unifi
 ```
 
 
